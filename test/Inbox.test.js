@@ -7,6 +7,7 @@ const { interface, bytecode } = require('../compile');
 let accounts;
 let inbox;
 
+// will run before every it 
 beforeEach(async () => {
   // Get a list of all accounts
   accounts = await web3.eth.getAccounts();
